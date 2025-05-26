@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equipo de Desarrollo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f9489, #1e2fc9);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #1e54c9;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0 0.2rem;
+      color: #1e29c9;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0.6rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* 📱 Diseño responsivo para pantallas pequeñas */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+        padding: 1.5rem;
+      }
+
+      .team-container {
+        gap: 2rem;
+        padding: 2rem 1rem;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .card h3 {
+        font-size: 1rem;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Equipo de Desarrollo</h1>
+  </header>
+
+  <section class="team-container">
+    <div class="card">
+      <img src="image/Ilmer.jpg" alt="Ilmer Samdersson">
+      <h3>Ilmer Samdersson Nuñez Lancheros</h3>
+      <p>📞 +57 3173562745</p>
+      <p>📧 ilmer.nunez@correounivalle.edu.co</p>
+    </div>
+
+    <div class="card">
+      <img src="image/erika.jpg" alt="Erika Julieth">
+      <h3>Erika Julieth Orozco Sanchez</h3>
+      <p>📞 +57 3228803018</p>
+      <p>📧 erika.julieth.orozco@correounivalle.edu.co</p>
+    </div>
+
+    <div class="card">
+      <img src="image/Mario.jpg" alt="Mario Andres">
+      <h3>Mario Andres Delgado Restrepo</h3>
+      <p>📞  +57 3242026884</p>
+      <p>📧 delgadorestrepo35@gmail.com</p>
+    </div>
+  </section>
+</body>
+</html>
